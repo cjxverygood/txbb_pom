@@ -3,6 +3,20 @@ server:
 spring:
   application:
     name: web-chat
+  rabbitmq:
+    host: 192.168.226.180
+    username: admin
+    password: admin
+    virtual-host: /admin
+    port: 5672
+  redis:
+    host: 192.168.226.180
+  datasource:
+    url: jdbc:mysql:///txbb
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
 eureka:
   client:
     service-url:
@@ -10,3 +24,4 @@ eureka:
 
 zk:
   host: 192.168.226.180:2181
+
